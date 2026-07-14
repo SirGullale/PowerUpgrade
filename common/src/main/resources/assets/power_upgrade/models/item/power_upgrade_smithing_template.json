@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "power_upgrade:item/power_upgrade_smithing_template"
+  }
+}

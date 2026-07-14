@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "power_upgrade",
+	"version": "${version}",
+	"name": "Power Upgrade",
+	"description": "Addon for Dungeon Difficulty",
+	"authors": [
+		"Gullale"
+	],
+	"contact": {
+		"homepage": "https://github.com/SirGullale/PowerUpgrade",
+		"issues": "https://github.com/SirGullale/PowerUpgrade/issues"
+	},
+	"license": "GPL-3.0",
+	"icon": "icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.power_upgrade.fabric.FabricMain"
+		],
+		"client": [
+			"net.power_upgrade.fabric.client.FabricClient"
+		],
+		"fabric-datagen": [
+			"net.power_upgrade.PowerUpgradeDataGen"
+		]
+	},
+	"mixins": [
+		"power_upgrade.mixins.json"
+	],
+	"depends": {
+		"minecraft": ">=${minecraft_compat_version}",
+		"fabricloader": ">=${fabric_loader_version}",
+		"fabric-api":"*",
+		"fabric-key-binding-api-v1":"*",
+		"dungeon_difficulty": ">=${dungeon_difficulty_version}"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

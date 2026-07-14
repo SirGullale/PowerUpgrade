@@ -1,0 +1,71 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:constant",
+        "value": 1
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "power_upgrade:huge_power_shard",
+          "conditions": [
+            {
+              "condition": "minecraft:killed_by_player"
+            },
+            {
+              "condition": "minecraft:random_chance_with_enchanted_bonus",
+              "enchantment": "minecraft:looting",
+              "unenchanted_chance": 0.01,
+              "enchanted_chance": {
+                "type": "minecraft:linear",
+                "base": 0.015,
+                "per_level_above_first": 0.005
+              }
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "type": "minecraft:constant",
+        "value": 1
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "power_upgrade:magnificent_power_shard",
+          "conditions": [
+            {
+              "condition": "minecraft:killed_by_player"
+            },
+            {
+              "condition": "minecraft:random_chance_with_enchanted_bonus",
+              "enchantment": "minecraft:looting",
+              "unenchanted_chance": 0.005,
+              "enchanted_chance": {
+                "type": "minecraft:linear",
+                "base": 0.0075,
+                "per_level_above_first": 0.0025
+              }
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "net.power_upgrade.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "LivingEntityMixin",
+    "LootableInventoryMixin",
+    "SmithingScreenHandlerMixin",
+    "VaultBlockEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+	}
+}

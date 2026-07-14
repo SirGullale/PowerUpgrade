@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:iron_ingot"
+    },
+    "C": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "S": {
+      "item": "power_upgrade:power_upgrade_smithing_template"
+    }
+  },
+  "pattern": [
+    "#S#",
+    "#C#",
+    "###"
+  ],
+  "result": {
+    "count": 2,
+    "id": "power_upgrade:power_upgrade_smithing_template"
+  }
+}

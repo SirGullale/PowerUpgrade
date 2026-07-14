@@ -1,0 +1,41 @@
+architectury {
+    common rootProject.enabled_platforms.split(',')
+}
+
+// Datagen (run from :fabric) writes here; pick it up as a normal resource so it's
+// shared by every platform through the common jar, no manual copying needed.
+sourceSets.main.resources.srcDir 'src/main/generated'
+
+processResources {
+    // Datagen's own bookkeeping, not a game resource.
+    exclude '.cache/**'
+}
+
+repositories {
+    maven {
+        name = 'Modrinth'
+        url = 'https://api.modrinth.com/maven'
+        content {
+            includeGroup 'maven.modrinth'
+        }
+    }
+    mavenLocal()
+}
+
+dependencies {
+    // We depend on Fabric Loader here to use the Fabric @Environment annotations,
+    // which get remapped to the correct annotations on each platform.
+    // Do NOT use other classes from Fabric Loader.
+    modImplementation "net.fabricmc:fabric-loader:$rootProject.fabric_loader_version"
+
+    // Temporary solution, to compile the project, and later to resolve
+    modImplementation "net.fabricmc.fabric-api:fabric-api:$rootProject.fabric_api_version"
+
+    modImplementation("maven.modrinth:tiny-config:${project.tiny_config_version}-fabric")
+    //modImplementation "net.tiny_config:tiny_config-fabric:${project.tiny_config_version}"
+
+    // Compile-time only: gives access to Dungeon Difficulty's classes so common code
+    // can reference them. Each platform module provides the real (matching) artifact
+    // at runtime via modCompileOnly/modLocalRuntime or modImplementation.
+    modCompileOnly "maven.modrinth:dungeon-difficulty:3.6.10+1.21.1-fabric"
+}

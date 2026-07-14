@@ -1,0 +1,9 @@
+{
+  "type": "power_upgrade:power_smithing",
+  "template": {
+    "item": "power_upgrade:power_upgrade_smithing_template"
+  },
+  "addition": {
+    "item": "power_upgrade:small_power_shard"
+  }
+}

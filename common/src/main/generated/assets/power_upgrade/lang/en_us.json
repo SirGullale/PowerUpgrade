@@ -1,0 +1,21 @@
+{
+  "item.power_upgrade.big_power_shard": "Big Power Shard",
+  "item.power_upgrade.big_power_shard.applies_to": "Equipment",
+  "item.power_upgrade.huge_power_shard": "Huge Power Shard",
+  "item.power_upgrade.huge_power_shard.applies_to": "Equipment",
+  "item.power_upgrade.magnificent_power_shard": "Magnificent Power Shard",
+  "item.power_upgrade.magnificent_power_shard.applies_to": "Equipment",
+  "item.power_upgrade.medium_power_shard": "Medium Power Shard",
+  "item.power_upgrade.medium_power_shard.applies_to": "Equipment",
+  "item.power_upgrade.power_level": "§f𜻠§r Power Level: %s",
+  "item.power_upgrade.power_upgrade_smithing_template": "Smithing Template",
+  "item.power_upgrade.power_upgrade_smithing_template.additions_slot_description": "Add power upgrade",
+  "item.power_upgrade.power_upgrade_smithing_template.applies_to": "Equipment",
+  "item.power_upgrade.power_upgrade_smithing_template.base_slot_description": "Add a piece of armor, weapon or tool",
+  "item.power_upgrade.power_upgrade_smithing_template.ingredients": "Power Shard",
+  "item.power_upgrade.small_power_shard": "Small Power Shard",
+  "item.power_upgrade.small_power_shard.applies_to": "Equipment",
+  "item.power_upgrade.smithing_template.hint": "Power Shard",
+  "itemGroup.power_upgrade.generic": "Power Upgrade",
+  "upgrade.power_upgrade.power_upgrade_smithing_template": "Power Upgrade"
+}
