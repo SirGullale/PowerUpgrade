@@ -5,11 +5,11 @@ Addon for Dungeon Difficulty
 
 # Features
 
-- Allows applying a power scaling to equipment via the smithing table
-- Adds power shards
+- Allows applying power scaling to equipment via the smithing table
+- Adds Power Shards
 - Adds a Power Upgrade Smithing Template
 - Dungeon Difficulty's rules affect Power Upgrade's loot
-- Power Upgrade is configurable via datapack and its configuration file
+- Power Upgrade is configurable via a datapack and its configuration file
 
 # Mod items
 The mod adds these various items obtainable through combat and exploration
