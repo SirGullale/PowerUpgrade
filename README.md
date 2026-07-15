@@ -11,8 +11,8 @@ Addon for Dungeon Difficulty
 - Dungeon Difficulty's rules affect Power Upgrade's loot
 - Power Upgrade is configurable via a datapack and its configuration file
 
-# Mod items
-The mod adds these various items obtainable through combat and exploration
+# Items
+This mod adds the following items, obtainable through combat and exploration:
 
 |                                Item                                 | Name                       |
 |:-------------------------------------------------------------------:|----------------------------|
